@@ -31,15 +31,33 @@
 //     }
 //     export default App;
 // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-import Cybrom from "./cybrom";
-const App=()=>{
+// import Cybrom from "./cybrom";
+// const App=()=>{
       
-        return(
-            <>
-    <h1>welcome</h1>
+//         return(
+//             <>
+//     <h1>welcome</h1>
     
-        <Cybrom/>       
-     </>
-        )
-    }
-    export default App;
+//         <Cybrom/>       
+//      </>
+//         )
+//     }
+//     export default App;
+/////////////////////////////////(context api)/////////////////////////////////////////////////////////
+
+import Authapp from "./authapp";
+import Unauthapp from "./unauthapp";
+import { useContext } from "react";
+import { myContext } from "./logincontext";
+const App=()=>{
+      const{user}=useContext(myContext);
+            return(
+                <>
+        <h1>login system!!!</h1>
+        {user.auth? <Authapp/> :<Unauthapp/>}
+        
+     
+         </>
+            )
+        }
+        export default App;
