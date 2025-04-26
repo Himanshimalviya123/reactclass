@@ -1,15 +1,15 @@
-// import { useContext} from "react";
-// import { myContext } from "./App";
+import { useContext} from "react";
+import { myContext } from "./App";
 
-// const Cybrom=()=>{
-//     const{name}=useContext(myContext)
-//     return(
-//         <>
-// <h1>welcome:{name}</h1>       
-//  </>
-//     )
-// }
-// export default Cybrom;
+const Cybrom=()=>{
+    const{name}=useContext(myContext)
+    return(
+        <>
+<h1>welcome:{name}</h1>       
+ </>
+    )
+}
+export default Cybrom;
 // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\()\\\\\\\\\\\\\\\\\\\\\\\\\\\
 // const Cybrom=({children})=>{
        
